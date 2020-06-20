@@ -1,4 +1,3 @@
-# This program prints Hello, world!
 
 from pyspark import SparkContext
 import plotly.offline as py
@@ -43,7 +42,7 @@ fig.update_layout(
         color="#7f7f7f"
     )
 )
-py.plot(figure_or_data=fig,filename="reporte1.html")
+py.plot(figure_or_data=fig,filename="reporte1_a.html")
 
 ###############  Segundo reporte #############################################
 
@@ -82,7 +81,7 @@ fig.update_layout(
     )
 )
 
-py.plot(figure_or_data=fig,filename="reporte2.html")
+py.plot(figure_or_data=fig,filename="reporte1_b.html")
 
 
 ###############  tercer reporte #############################################
@@ -121,4 +120,4 @@ fig.update_layout(
     )
 )
 
-py.plot(figure_or_data=fig,filename="reporte3.html")
+py.plot(figure_or_data=fig,filename="reporte1_c.html")
