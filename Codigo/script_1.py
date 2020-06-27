@@ -3,7 +3,7 @@ from pyspark import SparkContext
 import plotly.offline as py
 import plotly.graph_objs as go
 
-sc = SparkContext ("local","practica")
+sc = SparkContext("local","practica")
 texto= sc.textFile("C:/Archivos/ventas_video_juegos.csv")
 
 rdd=texto.map(lambda linea:linea.split("|"))\
@@ -33,6 +33,7 @@ fig = go.Figure(go.Bar(
 ))
 
 fig.update_layout(
+
     title="Ventas globales",
     xaxis_title="Categorias",
     yaxis_title="Ventas",

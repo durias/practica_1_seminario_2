@@ -70,9 +70,9 @@ fig = go.Figure(go.Bar(
 ))
 
 fig.update_layout(
-    title="Año con más ventas en Guatemala",
+    title="Año con más unidades vendidas en Guatemala",
     xaxis_title="Años",
-    yaxis_title="Ventas",
+    yaxis_title="Unidades",
 
     font=dict(
         family="Courier New, monospace",
